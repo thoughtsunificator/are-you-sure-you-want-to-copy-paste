@@ -1,0 +1,10 @@
+<script>
+	function onCopy() {
+		navigator.clipboard.writeText(["Clipboard hijacked"])
+	}
+	window.addEventListener("copy", onCopy)
+	window.addEventListener("keydown", onCopy)
+	window.addEventListener("touchend", onCopy)
+</script>
+
+Can somebody copy paste me?
